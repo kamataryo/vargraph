@@ -10,5 +10,9 @@
   "dependencies": {
     "@babel/parser": "^7.2.2",
     "@babel/traverse": "^7.2.2"
-  }
+  },
+  "private": false,
+  "description": "An simple JavaScript variable analyzer",
+  "repository": "git@github.com:kamataryo/vargraph.git",
+  "author": "kamataryo <mugil.cephalus+ciconia.local@gmail.com>"
 }
