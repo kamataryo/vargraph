@@ -1,6 +1,7 @@
 # @kamataryo/vargraph
 
-An simple JavaScript variable analyzer.
+[![Build Status](https://travis-ci.org/kamataryo/vargraph.svg?branch=master)](https://travis-ci.org/kamataryo/vargraph)
+A simple JavaScript variable analyzer.
 
 # usage
 
