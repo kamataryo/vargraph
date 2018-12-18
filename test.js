@@ -1,5 +1,5 @@
 const assert = require('assert')
-const prase = require('./')
+const parse = require('./')
 
 const describe = (title, test) => {
   try {
@@ -21,7 +21,7 @@ describe('case 1', () => {
     a: { incomes: ['b'], outcomes: [] },
     b: { incomes: [], outcomes: ['a'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
 
 describe('case 2', () => {
@@ -34,7 +34,7 @@ describe('case 2', () => {
     a: { incomes: ['b'], outcomes: [] },
     b: { incomes: [], outcomes: ['a'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
 
 describe('case 3', () => {
@@ -49,7 +49,7 @@ describe('case 3', () => {
     b: { incomes: ['c'], outcomes: [] },
     c: { incomes: [], outcomes: ['a', 'b'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
 
 describe('case 4', () => {
@@ -63,7 +63,7 @@ describe('case 4', () => {
     a: { incomes: ['b'], outcomes: ['x'] },
     b: { incomes: [], outcomes: ['a', 'x'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
 
 describe('case 5', () => {
@@ -76,7 +76,7 @@ describe('case 5', () => {
     a: { incomes: ['b'], outcomes: [] },
     b: { incomes: [], outcomes: ['a'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
 
 describe('case 6', () => {
@@ -90,5 +90,5 @@ describe('case 6', () => {
     y: { incomes: ['a'], outcomes: [] },
     a: { incomes: [], outcomes: ['x', 'y'] }
   }
-  assert.deepEqual(prase(code), expected)
+  assert.deepEqual(parse(code), expected)
 })
